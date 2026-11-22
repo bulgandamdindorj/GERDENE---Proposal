@@ -565,6 +565,14 @@ footer{border-top:1px solid var(--line);padding:26px 5vw;display:flex;justify-co
 .realmag .mtext span{display:block;transform:rotate(-2.2deg)}
 .realmag .mtext span+span{transform:rotate(-1deg) translateX(6%)}
 .realmag .mtext .ch{display:inline-block}
+.cvbtn{display:inline-block;margin-top:22px;border:1px solid #6b655d;color:#f1ede6;padding:11px 18px;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;text-decoration:none;transition:background .3s,color .3s}.cvbtn:hover{background:#f1ede6;color:#141414}
+.qw{padding:clamp(50px,7vw,80px) 0;background:#ebe5db}
+.qwgrid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:18px}
+.qwc{background:var(--paper);border:1px solid #ddd3c4;padding:20px 22px;display:grid;gap:6px}
+.qwc b{font-family:var(--serif);font-weight:500;font-size:1.3rem}
+.qwc span{font-size:.88rem;color:#5d574f}
+.qwc a{font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink);margin-top:4px}
+@media(max-width:700px){.qwgrid{grid-template-columns:1fr}}
 /* next pill */
 #nextpill{position:fixed;left:50%;bottom:18px;transform:translate(-50%,0);z-index:40;display:flex;align-items:center;gap:10px;background:rgba(20,20,20,.88);color:#fff;text-decoration:none;padding:10px 18px 10px 20px;border-radius:40px;font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;backdrop-filter:blur(8px);transition:opacity .4s,transform .4s;box-shadow:0 10px 30px rgba(0,0,0,.18)}
 #nextpill span{opacity:.6}
@@ -766,16 +774,28 @@ section{scroll-margin-top:60px}
   </div>
 </section>
 
+<section class="qw" data-name="Quick wins">
+  <div class="wrap">
+    <div class="eyebrow rv">Two quick wins before the holidays</div>
+    <div class="qwgrid">
+      <div class="qwc rv"><b>Tappable address on the website</b><span>The store address is plain text. Linking it to Google Maps gives phone shoppers directions in one tap.</span><a href="https://www.google.com/maps/search/?api=1&query=GERDENE+2003+W+4th+Avenue+Vancouver+BC" target="_blank" rel="noopener">See how it works ↗</a></div>
+      <div class="qwc rv d1"><b>Map link on social media</b><span>A location or map link in the Instagram profile saves holiday shoppers a search.</span></div>
+    </div>
+  </div>
+</section>
 <section data-name="About me" class="about" id="about">
   <div class="wrap">
     <div class="eyebrow rv">About me</div>
     <h2 class="rv d1">Bulgan <em>Damdindorj.</em></h2>
     <div class="agrid">
-      <p class="rv d2">MBA, University Canada West, 2026. Bachelor of Finance from Mongolia. I like work where a good story and good numbers meet, and I understand your customers' curiosity about Mongolia from the inside.</p>
+      <div class="rv d2">
+        <p>Over three years in marketing and business analysis: finding what customers need, turning data into campaigns and measuring what works. MBA, University Canada West. Bachelor of Finance.</p>
+        <a class="cvbtn" href="Bulgan_Damdindorj_Resume.pdf" target="_blank" rel="noopener">View my resume ↗</a>
+      </div>
       <ul>
-        <li class="rv"><b>Marketing with analytics</b><span>At Omnicapital in Mongolia, I analysed customer data for the Moni app and proposed a campaign to reach 433K people who downloaded the app but never registered.</span></li>
-        <li class="rv d1"><b>Research done in house</b><span>I ran the customer research myself instead of using an outside agency, saving about CAD $75,000.</span></li>
-        <li class="rv d2"><b>Data projects in Canada</b><span>The credit scoring project you saw on LinkedIn: Python modelling and a Power BI dashboard.</span></li>
+        <li class="rv"><b>Marketing with analytics</b><span>Found problems no one had flagged in a lending app, which led to a full rebrand that I delivered through launch.</span></li>
+        <li class="rv d1"><b>Research that led to decisions</b><span>Analysing the loan portfolio uncovered an underserved district with low default risk, leading to a targeted campaign the CEO approved.</span></li>
+        <li class="rv d2"><b>Data projects in Canada</b><span>As a volunteer analyst at the nonprofit GLOCAL, showed with Statistics Canada data how rising interest rates squeeze Canadian firms' margins. In my own credit scoring project, found that payment history predicts default for borrowers with no credit history.</span></li>
       </ul>
     </div>
   </div>
@@ -787,7 +807,6 @@ section{scroll-margin-top:60px}
     <h2 class="rv d1">These ideas <em>are yours.</em></h2>
     <p class="rv d2">Please take whatever is useful for GERDENE. If you would like help putting any of it into action, I would be glad to talk whenever it suits you.</p>
     <div class="mn rv d3">Баярлалаа, Bulgan</div>
-    <p class="ps rv">P.S. One small thing I noticed: the store address on your website is plain text. <a href="https://www.google.com/maps/search/?api=1&query=GERDENE+2003+W+4th+Avenue+Vancouver+BC" target="_blank" rel="noopener">Linking it to Google Maps</a> lets phone shoppers get directions in one tap.</p>
   </div>
 </section>
 
